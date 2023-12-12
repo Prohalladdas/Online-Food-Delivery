@@ -1,0 +1,268 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Navber section */
+#navber {
+    /* Navber por por korar jonno  */
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navber ul {
+    /* Home, service, contact us, egulo por por korar jonno */
+    display: flex;
+
+}
+
+#navber ul li {
+    /* Eta home ,service contact us ,egulor niche line tar jonno */
+    list-style: none;
+    font-size: 1.5rem;
+
+}
+
+#navber ul li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 2px 22px;
+    border-radius: 19px;
+    text-shadow: 2px 3px 3px rgb(0, 0, 0);
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+
+#navber ul li a:hover {
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    text-shadow: none;
+}
+
+#navber::before {
+    /* Eta logo,home,service,contact us egulor background color er jonno */
+    background-color: black;
+    content: "";
+    position: absolute;
+    top: 0px; 
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/* icon image */
+.icon {
+    margin: 20px 2px;
+}
+
+.icon img {
+    height: 64px;
+
+}
+
+/* home section */
+#home {
+    /* Eta paragraph take pager majhkhane anar jonno */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 170px;
+    font-size: 1.4rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.h-primary {
+    /* Eta home er Heading er jonno */
+    font-size: 3.0rem;
+    padding: 19px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+button {
+    padding: 7px 15px;
+    margin: 30px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: rgba(255, 64, 0, 0.705);
+    color: aliceblue;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+button:hover {
+    background-color: rgba(255, 60, 0, 0.872);
+    color: rgb(2, 1, 1);
+}
+
+#home::before {
+    /* Eta page er background photor jonno */
+    background-image: url(bg2.jpg);
+    background-size: cover;
+    top: 0px;
+    left: 0px;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 640px;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+/* Service container */
+#service-container {
+    /* Eta service take ektu niche anar jonno */
+    /* margin-top: -30px; */
+     margin: -60px 0px; 
+    padding: 1px 15px;
+}
+
+.h-primary-center {
+    /* Eta service er heading er jonno */
+    display: block;
+    text-align: center;
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 2px 3px 5px gray;
+}
+
+#service {
+    /* Eta box gulo por por majkhane anar jonno */
+    display: flex;
+    text-align: center;
+    /* align-items: center; */
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* justify-content: space-around; */
+
+}
+
+#service img {
+    padding: 5px;
+    height: 120px;
+}
+
+#service p {
+    padding: 8px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.h-secondary-center {
+    /* Eta box er vitor heading er jonno */
+    font-size: 1.5rem;
+}
+
+.box {
+    /* Eta box take koto boro choto korte hobe kemon akriti dite hobe tar jonno */
+    border: 2px solid black;
+    background-color: gainsboro;
+    width: 440px;
+    border-radius: 18px;
+    margin: 5px;
+}
+
+/* Clients section */
+#clientes-section {
+    /* eta opor theke niche korar jonno */
+    margin-top: 102px;
+}
+
+#clientes-section h1 {
+    text-shadow: 2px 1px 3px rgb(255, 254, 254);
+}
+
+#clientes {
+    /* Eta sob image por por laine ar majhkhane anar jonno */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clientes::before {
+    /* Eta background image er jonno */
+    background-image: url(clientebg.jpg);
+    background-size: cover;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 275px;
+    z-index: -1;
+    opacity: 0.5;
+    margin-bottom: 85px;
+    background-position: left;
+}
+
+.clientes-item img {
+    /* Eta image er jonno */
+    height: 80px;
+    margin: 72px;
+}
+
+/* Form section */
+#contact{
+    /* Eta form guloke nijer jayga theke soranor jonno */
+    position: relative;
+}
+
+#contact::before{
+    background-image: url(contactbg.jpg);
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 105%;
+    background-size: cover;
+    background-position:left ;
+    z-index: -1;
+    opacity: 0.7;
+    margin-top: -14px;
+}
+
+#contact-box{
+    /* Era box sob gulor jonno name ,email,contact no egulo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1px 2px;
+    margin: 12px 122px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+#contact-box form{
+     /* Era box er bairer gulo jemon name ,email,contact no egulo */
+     padding: 5px;
+     width: 460px;
+     font-size: 1.3rem;
+    }
+    
+    .form-group input{
+    /* Eta 'enter your name' egulor jonno */
+    padding: 5px;
+    width: 500px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group button{
+    margin: 0px;
+    margin-top: 10px;
+}
+
+footer{
+    display: flex;
+     text-align: center; 
+    flex-direction: column;
+    background-color: black;
+    color: white;
+}
